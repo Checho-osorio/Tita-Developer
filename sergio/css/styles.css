@@ -1,0 +1,337 @@
+@font-face {
+    font-family: CapitanejoBTRegular;
+    src: url(../fonts/capitanejo-bt-regular-webfont.woff);
+}
+
+body {
+    font-family: CapitanejoBTRegular;
+    margin: 0;
+}
+
+header {
+    padding: 0 15%;
+    display: flex;
+    align-items: center;
+}
+
+
+/*menu*/
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li:nth-child(5) {
+    color: red;
+}
+
+li {
+    margin: 0 15px;
+}
+
+
+/*top banner*/
+
+#header__topbanner {
+    padding: 5px;
+    width: 100%;
+    background: black;
+    color: white;
+    height: 15px;
+    text-align: center;
+}
+
+.header__banner {
+    position: relative;
+}
+
+.header__banner img {
+    width: 100%;
+}
+
+.texto-banner {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.texto-banner h2 {
+    color: #ffff;
+    font-size: 50px;
+    text-transform: uppercase;
+    width: 400px;
+    text-align: center;
+}
+
+.texto-banner .boton {
+    border: 1px solid white;
+    padding: 20px 40px;
+    color: #f7f7f7;
+}
+
+.boton {
+    border: solid;
+    padding: 15px;
+}
+
+
+/*texto Welcome */
+
+.home___text {
+    height: 25%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*vitrina*/
+
+.home__vitrina {
+    padding: 2% 10%;
+}
+
+.vitrina__banner {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    height: 500px;
+}
+
+.vitrina__banner img {
+    width: 100%;
+    height: inherit;
+}
+
+.vitrina__coleccion {
+    display: inline-block;
+    width: 50%;
+}
+
+.vitrina__coleccion_bloque1 {
+    display: flex;
+    justify-content: center;
+}
+
+.vitrina__coleccion_1 {
+    display: inline-block;
+}
+
+.vitrina__coleccion_2 {
+    display: inline-block;
+}
+
+.vitrina__coleccion_bloque2 {
+    display: flex;
+    justify-content: center;
+}
+
+.vitrina__coleccion_3 {
+    display: inline-block;
+}
+
+.vitrina__coleccion_4 {
+    display: inline-block;
+}
+
+.padding_vitrina {
+    padding: 0px 15px;
+}
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    position: relative;
+}
+
+.footer__content {
+    background: #f7f7f7;
+}
+
+.footer_colum {
+    height: auto;
+    padding: 30px 0 20px;
+    display: flex;
+}
+
+.footer_colum1 {
+    width: 40%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.footer_colum2 {
+    width: 35%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer_colum3 {
+    width: 15%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer_colum1 h3 {
+    text-align: left;
+    font-size: 17px;
+}
+
+.terminos__footer {
+    display: block;
+}
+
+.textolegal__footer {
+    width: 350px;
+    font-size: 11px;
+    color: #8b8b8b;
+}
+
+.terminos__footer a {
+    color: #8b8b8b;
+}
+
+.footer__menu {
+    margin: 0px;
+}
+
+.footer__menu li {
+    list-style: none;
+    margin: 0px;
+}
+
+.footer__menu a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer__imgMediopago {
+    width: 90%;
+}
+
+.footer__downbanner {
+    width: 100%;
+    background: #152047;
+    align-items: center;
+}
+
+.conten__downbanner {
+    display: flex;
+    justify-content: center;
+    padding: 15px 10%;
+}
+
+.footer__extras {
+    text-align: center;
+    font-size: 11px;
+    color: #8b8b8b;
+    padding: 15px 13px;
+}
+
+.menu-movil {
+    display: none;
+}
+
+
+/*Codigo Mobile */
+
+@media (max-width: 600px) {
+    /*Menu*/
+    header {
+        justify-content: center;
+        padding: 35px;
+    }
+    .menu {
+        display: none;
+    }
+    .texto-banner h2 {
+        font-size: 14px;
+    }
+    /*Vitrina*/
+    .vitrina__banner {
+        display: block;
+        width: 100%;
+        height: initial;
+    }
+    .vitrina__coleccion {
+        display: inline-block;
+        width: 100%;
+        height: initial;
+    }
+    /*footer*/
+    .footer_colum {
+        display: block;
+    }
+    .footer_colum1 {
+        width: 100%;
+    }
+    .footer_colum2 {
+        width: 100%;
+    }
+    .footer_colum3 {
+        width: 100%;
+    }
+    .footer__menu {
+        padding: initial;
+    }
+    .padding_vitrina {
+        padding: 0px;
+    }
+    /* Menu Movile */
+    .menu-movil {
+        display: block;
+        width: 100%;
+        position: fixed;
+        height: 50px;
+        z-index: 4;
+        background-color: #fff;
+        bottom: 0;
+    }
+    .menu-movil .hamburguesa {
+        width: 40px;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 50px;
+        border: 1px solid;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-movil .hamburguesa span {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 2px;
+        display: block;
+        margin-top: 3px;
+        border-radius: 10px;
+    }
+    #menu-movil-desplegado {
+        height: 80%;
+        width: 50%;
+        z-index: 3;
+        position: fixed;
+        bottom: 55px;
+        background-color: white;
+        color: black;
+        transition: .5s;
+    }
+    #menu-movil-desplegado li {
+        margin: 60px 15px;
+    }
+}
